@@ -1,0 +1,258 @@
+<html lang="pl-PL">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <title>Szukanie kombinacji</title>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    color: rgb(255, 255, 255);
+                    background: rgb(192, 192, 192);
+                    font-size: 27px;
+                }
+                p.tytul {
+                    font-size: 50px;
+                    text-align: center;
+                }
+                p.autor {
+                    font-size: 30px;
+                    text-align: center;
+                }
+                table {
+                    width: 50vw;
+                    height: 50vh;
+                    margin-top: 10vh;
+                }
+                table,
+                td {
+                    font-size: 24px;
+                    border: 3px solid #333;
+                    text-align: center;
+                }
+                table, th {
+                    background: rgb(254, 127, 0);
+                }
+
+                thead,
+                tfoot {
+                    background-color: #333;
+                    color: #fff;
+                }
+                .center {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                table, th, td {
+                    border-collapse: collapse;
+                }
+                td{
+                    border:1px solid black;
+                    border-top: none;
+                    border-bottom: none;
+                }
+            </style>
+        </head>
+        <body>
+            <p class="tytul">Szukanie Kombinacji
+            <p class="autor"> Autor: Mariusz Wr&#243bel
+                <table class="center">
+<tr><td>n = 3 &nbsp</td><td>1 1 1 
+<br></td>
+<tr><td></td><td>1 2 
+<br></td>
+<tr><td></td><td>3 
+<br></td>
+<tr><td></td><td>=====
+<br></td>
+<tr><td></td><td>Liczba kombinacji: 3
+<br></td>
+<tr><td></td><td>
+<br></td>
+<tr><td>n = abc
+ &nbsp</td><td>XXX
+<br></td>
+<tr><td></td><td>
+<br></td>
+<tr><td>n = 3.6
+ &nbsp</td><td>XXX
+<br></td>
+<tr><td></td><td>
+<br></td>
+<tr><td>n = 5
+ &nbsp</td><td>1 1 1 1 1 
+<br></td>
+<tr><td></td><td>1 1 1 2 
+<br></td>
+<tr><td></td><td>1 1 3 
+<br></td>
+<tr><td></td><td>1 2 2 
+<br></td>
+<tr><td></td><td>1 4 
+<br></td>
+<tr><td></td><td>2 3 
+<br></td>
+<tr><td></td><td>5 
+<br></td>
+<tr><td></td><td>=====
+<br></td>
+<tr><td></td><td>Liczba kombinacji: 7
+<br></td>
+<tr><td></td><td>
+<br></td>
+<tr><td>n = 6
+ &nbsp</td><td>1 1 1 1 1 1 
+<br></td>
+<tr><td></td><td>1 1 1 1 2 
+<br></td>
+<tr><td></td><td>1 1 1 3 
+<br></td>
+<tr><td></td><td>1 1 2 2 
+<br></td>
+<tr><td></td><td>1 1 4 
+<br></td>
+<tr><td></td><td>1 2 3 
+<br></td>
+<tr><td></td><td>1 5 
+<br></td>
+<tr><td></td><td>2 2 2 
+<br></td>
+<tr><td></td><td>2 4 
+<br></td>
+<tr><td></td><td>3 3 
+<br></td>
+<tr><td></td><td>6 
+<br></td>
+<tr><td></td><td>=====
+<br></td>
+<tr><td></td><td>Liczba kombinacji: 11
+<br></td>
+<tr><td></td><td>
+<br></td>
+<tr><td>n = 7
+ &nbsp</td><td>1 1 1 1 1 1 1 
+<br></td>
+<tr><td></td><td>1 1 1 1 1 2 
+<br></td>
+<tr><td></td><td>1 1 1 1 3 
+<br></td>
+<tr><td></td><td>1 1 1 2 2 
+<br></td>
+<tr><td></td><td>1 1 1 4 
+<br></td>
+<tr><td></td><td>1 1 2 3 
+<br></td>
+<tr><td></td><td>1 1 5 
+<br></td>
+<tr><td></td><td>1 2 2 2 
+<br></td>
+<tr><td></td><td>1 2 4 
+<br></td>
+<tr><td></td><td>1 3 3 
+<br></td>
+<tr><td></td><td>1 6 
+<br></td>
+<tr><td></td><td>2 2 3 
+<br></td>
+<tr><td></td><td>2 5 
+<br></td>
+<tr><td></td><td>3 4 
+<br></td>
+<tr><td></td><td>7 
+<br></td>
+<tr><td></td><td>=====
+<br></td>
+<tr><td></td><td>Liczba kombinacji: 15
+<br></td>
+<tr><td></td><td>
+<br></td>
+<tr><td>n = 5
+ &nbsp</td><td>1 1 1 1 1 
+<br></td>
+<tr><td></td><td>1 1 1 2 
+<br></td>
+<tr><td></td><td>1 1 3 
+<br></td>
+<tr><td></td><td>1 2 2 
+<br></td>
+<tr><td></td><td>1 4 
+<br></td>
+<tr><td></td><td>2 3 
+<br></td>
+<tr><td></td><td>5 
+<br></td>
+<tr><td></td><td>=====
+<br></td>
+<tr><td></td><td>Liczba kombinacji: 7
+<br></td>
+<tr><td></td><td>
+<br></td>
+<tr><td>n = 9 &nbsp</td><td>1 1 1 1 1 1 1 1 1 
+<br></td>
+<tr><td></td><td>1 1 1 1 1 1 1 2 
+<br></td>
+<tr><td></td><td>1 1 1 1 1 1 3 
+<br></td>
+<tr><td></td><td>1 1 1 1 1 2 2 
+<br></td>
+<tr><td></td><td>1 1 1 1 1 4 
+<br></td>
+<tr><td></td><td>1 1 1 1 2 3 
+<br></td>
+<tr><td></td><td>1 1 1 1 5 
+<br></td>
+<tr><td></td><td>1 1 1 2 2 2 
+<br></td>
+<tr><td></td><td>1 1 1 2 4 
+<br></td>
+<tr><td></td><td>1 1 1 3 3 
+<br></td>
+<tr><td></td><td>1 1 1 6 
+<br></td>
+<tr><td></td><td>1 1 2 2 3 
+<br></td>
+<tr><td></td><td>1 1 2 5 
+<br></td>
+<tr><td></td><td>1 1 3 4 
+<br></td>
+<tr><td></td><td>1 1 7 
+<br></td>
+<tr><td></td><td>1 2 2 2 2 
+<br></td>
+<tr><td></td><td>1 2 2 4 
+<br></td>
+<tr><td></td><td>1 2 3 3 
+<br></td>
+<tr><td></td><td>1 2 6 
+<br></td>
+<tr><td></td><td>1 3 5 
+<br></td>
+<tr><td></td><td>1 4 4 
+<br></td>
+<tr><td></td><td>1 8 
+<br></td>
+<tr><td></td><td>2 2 2 3 
+<br></td>
+<tr><td></td><td>2 2 5 
+<br></td>
+<tr><td></td><td>2 3 4 
+<br></td>
+<tr><td></td><td>2 7 
+<br></td>
+<tr><td></td><td>3 3 3 
+<br></td>
+<tr><td></td><td>3 6 
+<br></td>
+<tr><td></td><td>4 5 
+<br></td>
+<tr><td></td><td>9 
+<br></td>
+<tr><td></td><td>=====
+<br></td>
+<tr><td></td><td>Liczba kombinacji: 30
+<br></td>
+<tr><td></td><td>
+<br></td>
+</table></p></body>
+        </html>
