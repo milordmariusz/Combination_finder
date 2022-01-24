@@ -2,7 +2,7 @@ Combination finder
 
 <p align="center">
     <img src="Combination_finder.PNG">
-    <p/>https://github.com/milordmariusz/Combination_finder
+    <p/>
     
 Program operation:
 We start by opening the script.bat application. To run the algorithm
